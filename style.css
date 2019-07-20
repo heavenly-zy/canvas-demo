@@ -1,0 +1,145 @@
+ul, ol {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#xxx {
+    background: #3FC6F0;
+    display: block;
+    /* 鼠标变为十字形 */
+    cursor: crosshair;
+}
+
+body {
+    margin: 0px;
+    /* 防止出现滚动条 */
+    overflow: hidden;
+}
+
+.actions {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.actions svg {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.actions svg.active {
+    fill: #F45A8D;
+    transform: scale(1.2);
+}
+
+.colors {
+    position: fixed;
+    top: 60px;
+    left: 28px;
+}
+
+.colors>li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+
+.colors>li.black {
+    background: black;
+    cursor: pointer;
+}
+
+.colors>li.red {
+    background: red;
+    cursor: pointer;
+}
+
+.colors>li.green {
+    background: green;
+    cursor: pointer;
+}
+
+.colors>li.blue {
+    background: blue;
+    cursor: pointer;
+}
+
+.colors>li.yellow {
+    background: yellow;
+    cursor: pointer;
+}
+
+.colors>li.pink {
+    background: #F45A8D;
+    cursor: pointer;
+}
+
+.colors>li.purple {
+    background: purple;
+    cursor: pointer;
+}
+
+.colors>li.active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2);
+}
+
+.sizes {
+    position: fixed;
+    left: 28px;
+    top: 274px;
+}
+
+.sizes>li {
+    margin: 20px 0;
+}
+
+.sizes .thin {
+    height: 0;
+    width: 20px;
+    border-top: 2px solid black;
+    cursor: pointer;
+}
+
+.sizes .middle {
+    height: 0;
+    width: 20px;
+    border-top: 3px solid black;
+    cursor: pointer;
+}
+
+.sizes .thick {
+    height: 0;
+    width: 20px;
+    border-top: 8px solid black;
+    cursor: pointer;
+}
+
+.sizes .thickest {
+    height: 0;
+    width: 20px;
+    border-top: 12px solid black;
+    cursor: pointer;
+}
+
+.sizes>li.active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
+}

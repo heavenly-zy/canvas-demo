@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的画板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="xxx" width=300 height=300></canvas>
+    <div id="actions" class="actions">
+        <!-- 默认画笔为 active 状态： class="active icon" -->
+        <svg id="pen" class="active icon">
+            <use xlink:href="#icon-Pen"></use>
+        </svg>
+        <svg id="eraser" class="icon">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="clear" class="clear">
+            <use xlink:href="#icon-clear"></use>
+        </svg>
+        <svg id="download" class="clear">
+            <use xlink:href="#icon-save"></use>
+        </svg>
+    </div>
+    <ol class="colors">
+        <li id="black" class="black"></li>
+        <li id="red" class="red"></li>
+        <li id="green" class="green"></li>
+        <li id="blue" class="blue"></li>
+        <li id="yellow" class="yellow"></li>
+        <li id="pink" class="pink"></li>
+        <li id="purple" class="purple"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class="thin"></li>
+        <li id="middle" class="middle"></li>
+        <li id="thick" class="thick"></li>
+        <li id="thickest" class="thickest"></li>
+    </ol>
+    <script src="main.js"></script>
+    <script src="//at.alicdn.com/t/font_1305290_zjdr8npf0b.js"></script>
+</body>
+
+</html>
