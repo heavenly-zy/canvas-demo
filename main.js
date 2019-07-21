@@ -152,6 +152,7 @@ function autoSetCanvasSize(canvas) {
     }
 
     function setCanvasSize() { // 设置canvas占满整个页面
+        //  获取 document 宽高度（也就是 viewport 宽高度）
         var pageWidth = document.documentElement.clientWidth
         var pageHeight = document.documentElement.clientHeight
         canvas.width = pageWidth
@@ -172,6 +173,8 @@ function drawLine(x1, y1, x2, y2) {
     context.moveTo(x1, y1) //起点
     context.lineWidth = lineWidth // 取当前的线的宽度
     context.lineTo(x2, y2) //终点 
+    context.lineCap = "round"; // 线段末端以圆形结束，默认是方形(butt)
+    context.lineJoin = "round"; //相连部分如何连接在一起
     context.stroke()
     context.closePath()
 }
